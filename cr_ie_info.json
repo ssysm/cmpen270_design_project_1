@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Pop!_OS 20.04",
+		"os_version" : "20"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Segment Violation at 0x8",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7f80ebfa9ec5: pgm_pgme + 0x9dec5 (_ZN18PGME_SFL_ALGORITHM27push_enhanced_sfl_read_siidEjjb + 0x605)\n\t0x7f80ebfb8043: pgm_pgme + 0xac043 (_ZN18PGME_SFL_ALGORITHM22read_enhanced_sfl_siidEj + 0x131)\n\t0x7f80ebfb8af5: pgm_pgme + 0xacaf5 (_ZN18PGME_SFL_ALGORITHM15read_silicon_idEj + 0x2f7)\n\t0x7f80ebf9b8b7: pgm_pgme + 0x8f8b7 (_ZN18PGME_SFL_ALGORITHM19read_jic_silicon_idEjRjS0_ + 0x127)\n\t0x7f80ebf9bc7b: pgm_pgme + 0x8fc7b (_ZN15PGME_PROGRAMMER27get_jic_device_name_from_idESt6vectorIP17PGM_CHAIN_ELEMENTSaIS2_EEj + 0x97)\n\t0x7f80e797c334: pgm_pgmwq + 0x7f334 (_ZN15PGMWQ_FRAME_WND17add_child_devicesESt6vectorIP17PGM_CHAIN_ELEMENTSaIS2_EE + 0x1e2)\n\t0x7f80e79b045e: pgm_pgmwq + 0xb345e (_ZN15PGMWQ_FRAME_WND15add_device_listEjP10AJI_DEVICEbPSsbb + 0x1bda)\n\t0x7f80e79c7ff6: pgm_pgmwq + 0xcaff6 (_ZN15PGMWQ_FRAME_WND22standalone_auto_detectEbPSsb + 0x402)\n\t0x7f80e79d2985: pgm_pgmwq + 0xd5985 (_ZN15PGMWQ_FRAME_WND21on_auto_detect_actionEv + 0x73)\n\t0x7f80e79e098d: pgm_pgmwq + 0xe398d (_ZN15PGMWQ_FRAME_WND18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv + 0x183)\n\t0x7f8163e217c8: QtCore.so.4 + 0x1cd7c8 (_ZN11QMetaObject8activateEP7QObjectPKS_iPPv + 0x488)\n\t0x7f814cff9962: QtGui.so.4 + 0x932962 (_ZN15QAbstractButton7clickedEb + 0x32)\n\t0x7f814ccf864b: QtGui.so.4 + 0x63164b\n\t0x7f814ccf99d5: QtGui.so.4 + 0x6329d5\n\t0x7f814ccf9c2b: QtGui.so.4 + 0x632c2b (_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent + 0x7b)\n\t0x7f814c92cf11: QtGui.so.4 + 0x265f11 (_ZN7QWidget5eventEP6QEvent + 0x451)\n\t0x7f814ccf8dff: QtGui.so.4 + 0x631dff (_ZN15QAbstractButton5eventEP6QEvent + 0x3f)\n\t0x7f814cd988ee: QtGui.so.4 + 0x6d18ee (_ZN11QPushButton5eventEP6QEvent + 0x3e)\n\t0x7f814c8cb84f: QtGui.so.4 + 0x20484f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)\n\t0x7f814c8d20d3: QtGui.so.4 + 0x20b0d3 (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x3b3)\n\t0x7f8163e09ac4: QtCore.so.4 + 0x1b5ac4 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)\n\t0x7f814c8ceac5: QtGui.so.4 + 0x207ac5 (_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb + 0x135)\n\t0x7f814c95592a: QtGui.so.4 + 0x28e92a\n\t0x7f814c95462a: QtGui.so.4 + 0x28d62a (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0xe2a)\n\t0x7f814c97fd62: QtGui.so.4 + 0x2b8d62\n\t0x7f814733d17d: glib-2.0.so.0 + 0x5217d (g_main_context_dispatch + 0x27d)\n\t0x7f814733d400: glib-2.0.so.0 + 0x52400\n\t0x7f814733d4a3: glib-2.0.so.0 + 0x524a3 (g_main_context_iteration + 0x33)\n\t0x7f8163e3caf5: QtCore.so.4 + 0x1e8af5 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7f814c97f89f: QtGui.so.4 + 0x2b889f\n\t0x7f8163e08ad5: QtCore.so.4 + 0x1b4ad5 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)\n\t0x7f8163e08ea8: QtCore.so.4 + 0x1b4ea8 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)\n\t0x7f8163e0dcc4: QtCore.so.4 + 0x1b9cc4 (_ZN16QCoreApplication4execEv + 0xb4)\n\t   0x401eab: quartus + 0x1eab (_Z8qgq_mainiPPKc + 0x7b)\n\t0x7f81500b7e30: ccl_msg + 0x3ee30 (_Z15msg_main_threadPv + 0x10)\n\t0x7f814f77bacc: ccl_thr + 0x5acc (thr_final_wrapper + 0xc)\n\t0x7f81500b7eef: ccl_msg + 0x3eeef (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f814f7eef9c: ccl_mem + 0x9f9c (_Z18mem_thread_wrapperPFPvS_ES_ + 0x5c)\n\t0x7f814f7bdb39: ccl_err + 0x8b39 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f814f77bb0f: ccl_thr + 0x5b0f (thr_thread_wrapper + 0x15)\n\t0x7f81500b9ea1: ccl_msg + 0x40ea1 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xb2)\n\t   0x401f91: quartus + 0x1f91 (main + 0x26)\n\t0x7f8147db00b3: c.so.6 + 0x270b3 (__libc_start_main + 0xf3)\n\t   0x401d39: quartus + 0x1d39\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "20.1.1",
+		"build" : "720",
+		"edition" : "Lite Edition"
+	}
+}
